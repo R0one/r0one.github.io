@@ -112,6 +112,28 @@ h2.titre-prediction > span {
 }
 
 
+.loup-bg-right {
+	z-index: 4;
+	position: fixed;
+	top: 40%;
+	right: 0;
+	transform: translate(0,-50%);
+	max-height: 50%;
+
+	content: url("assets/images/loup-bg-right.png");
+}
+
+
+.loups-bg {
+	z-index: 3;
+	position: fixed;
+	top: 35%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	max-height: 70%;
+
+	content: url("assets/images/loups-bg.png");
+}
 
 .ombres-loups-couche-2  {
 	filter: blur(10px);
