@@ -1,0 +1,38 @@
+body {
+	font-family: 'Garamond', 'Adobe Garamond', 'Apple Garamond', 'Sabon', 'Minion', 'Galliard', 'Eldorado', 'Noto Serif', 'Aldhabi', 'Georgia', serif;
+	margin: 0;
+}
+
+h1 {
+	background-color: #714206;
+	color: #f0f0f0;
+	text-align: center;
+	line-height: 0em;
+	padding: 0.2em 0 0.5em 0;
+	margin: 0;
+	font-size: 1.5em;
+}
+.logo-ru {
+	content: url("assets/images/Logo_RiseUp_BN.png");
+	height: 3em;
+}
+.logo-subtitle {
+	font-size: 0.4em;
+	font-weight: normal;
+}
+
+.affiche-container {
+	height: 500px; /* todo delete, used for testing gradients */
+	background: radial-gradient(circle, #ffcb01 0%, #a63e12 50%, #7d1f15 70%, #62000b 90%, #4d013c 100%);
+}
+
+h2.titre-prediction {
+	text-align: center;
+	margin: 0.4em;
+}
+h2.titre-prediction > span {
+	content: url("assets/images/titre.svg");
+	height: 6em;
+	max-width: 60%;
+	max-height: 30%;
+}
