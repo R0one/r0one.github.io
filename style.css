@@ -23,14 +23,14 @@ h1 {
 
 .affiche-container {
 	transform: translateZ(0);
-	height: 500px; /* todo delete, used for testing gradients */
+	height: 35em; /* todo delete, used for testing gradients */
 	background: radial-gradient(circle, #ffcb01 0%, #a63e12 50%, #7d1f15 70%, #62000b 90%, #4d013c 100%);
 }
 
 h2.titre-prediction {
 	text-align: center;
 	margin: 0.4em;
-	z-index: 3;
+	z-index: 50;
 	position: fixed;
 	top: 0;
 	left: 50%;
@@ -43,7 +43,76 @@ h2.titre-prediction > span {
 	height: 100%;  /* follows parent: h2 */
 	content: url("assets/images/titre.svg");
 }
+
+.loup-fg-right {
+	z-index: 10;
+	position: fixed;
+	bottom: 0%;
+	right: 0%;
+	transform: translate(-100;-100%);
+	height: 57%;
+	content: url("assets/images/loup-fg-right.png");
+}
+.loup-fg-left {
+	z-index: 9;
+	position: fixed;
+	bottom: 0%;
+	left: -2%;
+	height: 60%;
+	content: url("assets/images/loup-fg-left.png");
+}
+
+.agathe {
+	z-index: 8;
+	position: fixed;
+	top: 52%;
+	left: 47%;
+	content: url("assets/images/agathe.png");
+	transform: translate(-50%, -50%);
+	height: 30%;
+}
+.danseuses-fg {
+	z-index: 7;
+	position: fixed;
+	top: 40%;
+	left: 50%;
+	content: url("assets/images/danseuses-fg.png");
+	transform: translate(-50%, -50%);
+	height: 50%;
+}
+.feu {
+	z-index: 6;
+	position: fixed;
+	top: 40%;
+	left: 50%;
+	content: url("assets/images/feu.png");
+	transform: translate(-50%, -50%);
+	height: 40%;
+}
+.ombre-feu {
+	z-index: 6;
+	position: fixed;
+	top: 62%;
+	left: 50%;
+	content: url("assets/images/ombre-feu.png");
+	transform: translate(-50%, -50%);
+	height: 10%;
+	opacity: 0.4;
+}
+.danseuses-bg {
+	z-index: 5;
+	position: fixed;
+	top: 30%;
+	left: 44.5%;
+	content: url("assets/images/danseuses-bg.png");
+	transform: translate(-50%, -50%);
+	height: 30%;
+}
+
+
+
 .ombres-loups-couche-2  {
+	filter: blur(10px);
 	z-index: 2;
 	position: fixed;
 	top: 0;
@@ -54,6 +123,7 @@ h2.titre-prediction > span {
 	content: url("assets/images/ombres-couche-2.svg");
 }
 .ombres-loups-couche-1  {
+	filter: blur(10px);
 	z-index: 1;
 	position: fixed;
 	top: 0;
