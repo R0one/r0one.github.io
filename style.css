@@ -44,6 +44,31 @@ h2.titre-prediction > span {
 	content: url("assets/images/titre.svg");
 }
 
+div.fo-vnir {
+	position: fixed;
+	bottom: 2%;
+	left: 50%;
+	transform: translate(-50%,0);
+	z-index: 12;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+div.fo-vnir > p {
+	color: #f2c0c7;
+	text-align: center;
+	font-size: 2em;
+	font-variant-caps: small-caps;
+	margin: 0;
+	text-shadow: 0 0 5px rgba(0,0,0,1);
+}
+div.fo-vnir > span {
+	height: 1em;
+	content: url("assets/images/arrow-down.svg");
+}
+
 .loup-fg-right {
 	z-index: 10;
 	position: fixed;
@@ -156,4 +181,24 @@ h2.titre-prediction > span {
 	height: 100%;
 	width: 100%;
 	content: url("assets/images/ombres-couche-1.svg");
+}
+
+.info-container {
+	padding: 2em;
+  	color: #5e0738;
+	background-color: #d9ab83;
+}
+
+.info-container a {
+	color: inherit;
+	text-decoration: underline dotted;
+}
+
+a.cta-billetterie {
+	display: inline-block;
+	background-color: #b05a5a;
+	color: white;
+	padding: 1em;
+	border-radius: 1em;
+	font-size: 1.2em;
 }

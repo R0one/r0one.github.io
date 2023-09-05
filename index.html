@@ -16,6 +16,7 @@
 		</h1>
 		<div class="affiche-container">
 			<p style="z-index: 3; position: relative; font-size: 0.7em; text-align: center; margin: 0; color: #fbcd9c;">présente sa création</p>
+			<div id="fo-vnir" class="fo-vnir"><p>Venez au village</p><span></span></div>
 			<h2 class="titre-prediction"><span>La Dernière Prédiction</span></h2>
 			<div class="loup-fg-right"></div>
 			<div class="loup-fg-left">˜</div>
@@ -29,5 +30,40 @@
 			<div class="ombres-loups-couche-2"></div>
 			<div class="ombres-loups-couche-1"></div>
 		</div>
+		<div class="info-container">
+		<h2 id="rpz">3 représentations</h2>
+		<p>au <a href="https://www.tam.fr/">théâtre André Malraux</a> de Rueil-Malmaison<p>
+		<ul>
+			<li>vendredi 15 septembre à <b>20h30</b></li>
+			<li>samedi 16 septembre à <b>15h30</b></li>
+			<li>samedi 16 septembre à <b>20h30</b></li>
+		</ul>
+		<h2>accès</h2>
+		<p>9 Place des Arts, 92500 Rueil-Malmaison. RER A, bus 144, 244, 258 (Rueil Ville).</p>
+		<h2>billetterie</h2>
+		<p><a class="cta-billetterie" href="https://www.helloasso.com/associations/rise-up-comedie-musicale">billetterie HelloAsso</a></p>
+		<p style="font-size: 0.7em; margin-top: 10em;">2023 - le réseau inter-écoles des spectacles étudiants des universités de Paris - association 1901 déclarée à la préfecture de Paris - hébergement Ionos - direction de la publication par lae président.e de l'association - contact: <span id="e2f">cliquez ici</span></p>
+		</div>
 	</body>
+	<script>
+	const s = document.getElementById("e2f");
+	function fill() {
+		console.log(s);
+		const asso = atob("cmlzZXVw");
+		const edition = 3+1;
+		const domaine = new URL(window.location.href).hostname;
+		const full = `${asso}${edition}@${domaine}`;
+		s.innerHTML = `<a href="mailto:${full}">${full}</a>`;
+	}
+	s.addEventListener("click", fill);
+
+
+
+	document.getElementById('fo-vnir').addEventListener('click', function (e) {
+
+        document.getElementById('rpz').scrollIntoView({
+            behavior: 'smooth'
+        });
+});
+	</script>
 </html>
