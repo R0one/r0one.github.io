@@ -202,3 +202,18 @@ a.cta-billetterie {
 	border-radius: 1em;
 	font-size: 1.2em;
 }
+
+div.resume {
+	background: linear-gradient(0deg, #2b0b1e 0%, #4c1f21 100%);
+	color: #ece6dc;
+	margin: 0;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-bottom: 1em;
+}
+.resume > * {
+	max-width: 30em;
+	margin: 0.5em;
+}
