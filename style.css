@@ -27,6 +27,15 @@ h1 {
 	background: radial-gradient(circle, #ffcb01 0%, #a63e12 50%, #7d1f15 70%, #62000b 90%, #4d013c 100%);
 }
 
+p.presente-sa-creation {
+	z-index: 3;
+	position: relative;
+	font-size: 0.7em;
+	text-align: center;
+	margin: 0;
+	color: #fbcd9c;
+}
+
 h2.titre-prediction {
 	text-align: center;
 	margin: 0.4em;
